@@ -1,0 +1,296 @@
+.{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    font-size: 10; 
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1.9rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(196, 205, 214);
+    position: fixed;
+    top: 0;
+    z-index: 333;
+}
+
+.container{
+    width:96%;
+    max-width: 117rem;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+
+}
+
+.navbar h1{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.navbar ul{
+    display: felx;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar ul a{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    color: blueviolet;
+    font: weight 400px;
+    letter-spacing: 2px;
+    transition:all 0.4s ease ;
+}
+
+.navbar ul a:hover{
+    color: white;
+    background-color: palevioletred;
+}
+
+.hero{
+    max-width: 114rem;
+    height: 40rem;
+    background: url(../Desktop/Google\ Ads.png) no-repeat center center / cover;
+}
+
+main{
+    max-width: 80rem;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: -15rem;    
+}
+
+main h2{
+font-size: 3rem;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 5px;
+}
+
+main .profile-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+main .profile-container .profile{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.profile-container .profile .img-container{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0,5rem;
+}
+
+main .profile-container .profile .text{
+    margin: 0 1rem;
+    color: rgb(53, 53, 1);
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.profile  .text h3{
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: 0.3 1,5rem;
+    border-radius: 0.2rem;
+}
+
+main .content p{
+    color: rgb(29, 3, 3);
+    margin: 1rem 0;
+
+}
+main .content h4{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: dodgerblue;
+    margin: 2rem 0;
+}
+
+main .content .content-img-container{
+    width: 100%;
+    height: 35rem;
+    background: url(../Desktop/EWRus0RXYAAXEA5.jpg)no-repeat center center / cover;
+}
+
+blockquote{
+    font-size: 1.4rem;
+    padding: 1rem 2.8rem;
+    line-height: 1.6;
+    font-weight: 300;
+    box-shadow: inset 0.5rem 0 0 palevioletred;
+    background-color: antiquewhite;
+}
+
+.tags{
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    background-color: whitesmoke;
+    color: gray;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0 0.5rem;
+}
+
+.articles{
+    width: 100%;
+    background-color: yellowgreen;
+    margin: 5rem 0;
+    padding: 5rem 0;
+}
+
+.articles .articles-heading{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.articles-heading h5{
+    font-size: 10rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    position: relative;
+    color: rgb(223, 223, 0.308);
+}
+
+.articles-heading h6{
+    font-size: 4rem;
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 505;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cards .cards-container{
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+}
+
+.cards .cards-container-one .img-holder{
+max-width: 100%;
+height: 24rem;
+position: relative;
+}
+
+.cards .cards-container-two .img-holder{
+    background: url(../Desktop/Google\ Ads.png) no-repeat center center / cover;
+}
+
+.cards .cards-container-three .img-holder{
+    background: url(../Desktop/Google\ Ads.png) no-repeat center center / cover;
+}
+
+.cards ,.cards-container .img-holder a{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: 00.3rem 1.5rem;
+    display: inline-block;
+    color: blue;
+    font-weight: 400;
+    position : absolute;
+    bottom: 5%;
+    right: 5%;
+    transition: all 0.4s ease;
+
+}
+
+.cards .cards-container:hover a{
+    background-color: pink;
+    color: white;
+}
+
+.cards .cards-container .cards-text{
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 1rem;
+
+}
+
+.cards .cards-container h4{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.cards .cards-container .cards-text p{
+    font-size: 1.2rem;
+}
+
+.articles.buttons{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.articles .btn{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    border-radius: none;
+    padding: 00.5rem 3rem;
+}
+
+footer{
+background-color: rgb(92, 83, 83);
+padding: 3rem 0;
+}
+
+.icons{
+    text-align: center;
+}
+
